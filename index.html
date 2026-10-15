@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A short branching adventure inside a forgotten jungle temple.">
+  <title>The Forgotten Temple</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="hero">
+      <p class="eyebrow">An expedition into the unknown</p>
+      <h1>The Forgotten Temple</h1>
+      <p class="intro">Beneath roots older than memory, a lost treasure waits for the explorer brave enough to choose its fate.</p>
+    </header>
+
+    <div class="game-layout">
+      <section class="story-panel" aria-live="polite" aria-atomic="true">
+        <div class="scene-heading">
+          <span class="scene-marker" aria-hidden="true">✦</span>
+          <div>
+            <p class="section-label">Current chapter</p>
+            <h2 id="scene-title">The Temple Gate</h2>
+          </div>
+        </div>
+        <div id="story-text" class="story-text"></div>
+        <div id="choice-list" class="choice-list" aria-label="Available choices"></div>
+      </section>
+
+      <aside class="status-panel" aria-label="Expedition status">
+        <section class="status-block">
+          <p class="section-label">Vitality</p>
+          <div id="health-display" class="health-display" aria-label="Health: 3 out of 3"></div>
+          <p id="health-note" class="status-note">The temple is watching.</p>
+        </section>
+
+        <section class="status-block inventory-block">
+          <p class="section-label">Satchel</p>
+          <ul id="inventory-list" class="inventory-list"></ul>
+        </section>
+
+        <button id="restart-button" class="restart-button" type="button">Restart expedition</button>
+      </aside>
+    </div>
+
+    <footer class="footer-note">Every choice leaves a trace.</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
